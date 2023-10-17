@@ -1,17 +1,27 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+
 
 import './index.css'
-import Home from './pages/Home';
-import ErrorPage from './pages/ErrorPage';
-import Layout from './pages/Layout';
+
+
+
+
+
+
+
+
 import AddProducts from './pages/AddProducts';
+import Layout from './pages/Layout';
+import Home from './pages/Home';
 import MyCart from './pages/MyCart';
+import AuthProvider from './Components/AuthProvider';
+import ErrorPage from './pages/ErrorPage';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Login from './pages/Login';
 import Registration from './pages/Registration';
+
+
 
 
 const router = createBrowserRouter([
@@ -36,6 +46,11 @@ const router = createBrowserRouter([
   path: "/Registration",
   element:<Registration></Registration>
 },
+{
+  path: "/Login",
+  element:<Login></Login>
+},
+
 
  ],
 },
@@ -43,6 +58,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+   <AuthProvider>
     <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )

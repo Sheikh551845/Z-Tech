@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
+import { AuthContext } from './AuthProvider'
 
 export default function Navbar() {
+
+  const {user,logout}=useContext(AuthContext)
   return (
     <div className=" bg-base-100 flex justify-between items-center mt-2 justify-items-center shadow-xl p-3  "> 
     <div className="mr-10 flex items-center">
@@ -147,33 +150,34 @@ export default function Navbar() {
     </div>
    </div>
    
-    {/* // user && Object.keys(user).length > 0?  {user.displayName}  :
-
-    <div>
-      <NavLink to="/Login">
-      <button className="md:btn text-black p-1 md:w-22 md:h-6    md:p-3 bg-white rounded-lg text-xs lg:text-base">Log In</button>
-   </NavLink>
-    </div> */}
+    {user && Object.keys(user).length > 0?    
     <div className="flex justify-center items-center gap-2 ">
-    <p className="text-black fond-bold text-xs lg:text-xl">Sheikh</p>
+    <p className="text-black fond-bold text-xs lg:text-xl">{user.displayName}</p>
     
     <div className="avatar">
       <div className="w-6 md:w-12 rounded-full ring ring-offset-base-100 ring-offset-2">
 
-        {/* {
+        {
           user?.photoURL !==null ? <img src={user.photoURL} /> : <img src="https://i.ibb.co/3MJwzX0/pngegg-1.png"/>
-        } */}
+        }
          
-         <img src="https://i.ibb.co/3MJwzX0/pngegg-1.png"/>
+      
        
       </div>
       </div>
     
       <button className="md:btn text-black p-1 md:w-22 md:h-6    md:p-3 bg-white rounded-lg text-xs lg:text-base"
-        //   onClick={logout}
+          onClick={logout}
       >Logout</button>
     
-    </div> 
+    </div> :
+
+<div>
+  <NavLink to="/Login">
+  <button className="md:btn text-black p-1 md:w-22 md:h-6    md:p-3 bg-white rounded-lg text-xs lg:text-base">Log In</button>
+</NavLink>
+</div>
+}
 
    
    </div>
