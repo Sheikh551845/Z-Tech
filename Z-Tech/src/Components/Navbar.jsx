@@ -13,15 +13,16 @@ export default function Navbar() {
                             </div>
    <div>
    <div className="hidden lg:block">
-    <ul className="mt-5 flex gap-7 mr-7 text-lg text-white font-bold">
+    <ul className="mt-5 flex gap-7 mr-7 ">
+
+  
       
     <NavLink
               to="/"
               className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? " underline" : ""
-              }
+                isPending ? "pending" : isActive ? "underline" : ""}
             >
-              <li className="cursor-pointer h-full flex items-center text-sm text-indigo-700 tracking-normal transition duration-150 ease-in-out">
+              <li className=" text-gray-800 cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 tracking-normal transition duration-150 ease-in-out">
     <span className="mr-2">
         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-grid" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" />
@@ -38,7 +39,7 @@ export default function Navbar() {
       <NavLink
               to="/AddProducts"
               className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? " underline" : ""
+                isPending ? "pending" : isActive ? " underline " : ""
               }
             >
               <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-gray-800 mx-10 tracking-normal transition duration-150 ease-in-out">
@@ -86,6 +87,14 @@ export default function Navbar() {
      
     </ul>
   </div>
+
+
+
+
+
+
+
+
   <div className="dropdown mr-6 relative">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
