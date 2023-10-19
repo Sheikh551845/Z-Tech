@@ -21,6 +21,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Login from './pages/Login';
 import Registration from './pages/Registration';
 import AllProducts from './pages/AllProducts';
+import ProductDetails from './pages/ProductDetails';
 
 
 
@@ -55,7 +56,16 @@ const router = createBrowserRouter([
   path: "/AllProducts",
   element:<AllProducts></AllProducts>
 },
-
+{
+  path: "/AllProducts",
+  element:<AllProducts></AllProducts>
+},
+{
+  path: "/ProductDetails/:_id",
+  element:<ProductDetails></ProductDetails>, 
+  loader: ()=>fetch("http://localhost:8888/AllProducts")
+      
+},
 
  ],
 },

@@ -70,11 +70,11 @@ const update=(name)=>
 
    
    
-//     useEffect(()=>{
-//     fetch("/data.json")
-//     .then ((res)=> res.json())
-//     .then((data)=>setData(data))
-// },[])
+    useEffect(()=>{
+    fetch("http://localhost:8888/AllProducts")
+    .then ((res)=> res.json())
+    .then((data)=>setData(data))
+    } ,[])
 
   const authInformation ={
     data,
