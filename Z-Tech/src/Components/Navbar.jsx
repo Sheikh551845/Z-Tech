@@ -13,7 +13,7 @@ export default function Navbar() {
                             </div>
    <div>
    <div className="hidden lg:block">
-    <ul className="mt-5 flex gap-7 mr-7 ">
+    <ul className="mt-5 flex gap-5 mr-5 ">
 
   
       
@@ -35,6 +35,22 @@ export default function Navbar() {
     Home
 </li>
             </NavLink>
+
+
+            <NavLink
+              to="/AllProducts"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? " underline " : ""
+              }
+            >
+              <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-gray-800 mx-10 tracking-normal transition duration-150 ease-in-out ">
+    <span className="mr-2">
+       <img src="https://i.ibb.co/GJTLtGR/product.png" alt=""   className="icon icon-tabler icon-tabler-code" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+    </span>
+    ALL Products
+</li>
+
+            </NavLink>
       
       <NavLink
               to="/AddProducts"
@@ -42,7 +58,7 @@ export default function Navbar() {
                 isPending ? "pending" : isActive ? " underline " : ""
               }
             >
-              <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-gray-800 mx-10 tracking-normal transition duration-150 ease-in-out">
+          <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-gray-800 mx-10 tracking-normal transition duration-150 ease-in-out ">
     <span className="mr-2">
         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-puzzle" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" />
@@ -53,6 +69,8 @@ export default function Navbar() {
 </li>
 
             </NavLink>
+
+           
 
     
     <NavLink
@@ -122,6 +140,19 @@ export default function Navbar() {
               <li className=" mt-2 cursor-pointer  text-sm hover:text-indigo-700 text-gray-800  tracking-normal transition duration-150 ease-in-out">
    
     Add Products
+</li>
+
+            </NavLink>
+
+            <NavLink
+              to="/AllProducts"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? " underline" : ""
+              }
+            >
+              <li className=" mt-2 cursor-pointer  text-sm hover:text-indigo-700 text-gray-800  tracking-normal transition duration-150 ease-in-out">
+   
+    All Products
 </li>
 
             </NavLink>
