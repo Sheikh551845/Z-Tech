@@ -1,9 +1,32 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useLoaderData, useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import { AuthContext } from '../Components/AuthProvider';
 
 export default function ProductDetails() {
 
-    const {_id}=useParams()
+    
+
+    const {_id}=useParams();
+   
+    const [CartData, setCartData] = useState([])
+    const [exist, setExist]=useState([])
+
+    useEffect(()=>{
+        fetch("http://localhost:8888/MyCart")
+        .then ((res)=> res.json())
+        .then((data)=>{setCartData(data);
+            console.log(data)
+        })
+        } ,[])
+
+        
+
+        
+
+   
+
+    
    
      
    
@@ -25,6 +48,54 @@ export default function ProductDetails() {
    
 
     const {productName, imageUrl,description,brandName}=card;
+
+
+
+     useEffect(()=>{
+        const findCard = CartData?.find(card=> card._id == _id)
+ 
+        if(findCard)
+        {
+           
+            setExist(findCard);
+        }
+        
+          
+     }
+     ,[CartData])
+
+  
+
+  
+
+     const CartSubmit=()=>
+     {
+        toast.error("Already added this product in cart"); 
+        if(!exist){
+
+            fetch('http://localhost:8888/MyCart', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(card)
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if(data.insertedId){
+                      toast.success("Product added to Cart")
+                     
+          
+                    }
+                })
+        }
+     
+     
+         }
+ 
+
+
+
   return (
     <div className="mx-auto">
     <div className=" py-12 mx-auto">
@@ -37,7 +108,7 @@ export default function ProductDetails() {
    </div>
  </div>
  
- <div className="relative flex max-w-screen-xl flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+ <div className="mx-auto relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
 <div className="p-6">
 <h5 className="mb-2 block font-sans text-3xl font-bold leading-snug tracking-normal text-blue-gray-900 antialiased">
  Details
@@ -50,11 +121,12 @@ export default function ProductDetails() {
 </p>
 </div>
 
-<div className="w-fit mx-auto">
+<div className="w-fit mx-auto py-10">
 <button
     className="select-none rounded-lg bg-black py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-indigo-400 transition-all hover:shadow-lg hover:shadow-indigo-700 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
     type="button"
     data-ripple-light="true"
+    onClick={CartSubmit}
   >
     Add to Cart
   </button>

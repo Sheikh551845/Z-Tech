@@ -16,7 +16,7 @@ export default function AuthProvider({children}) {
   const [user, setUser] = useState({})
   const [loading, setLoading] = useState(true)
   const [data, setData] = useState([])
-  
+  const [CartData, setCartData] = useState([])
 
 
   //Google
@@ -76,6 +76,14 @@ const update=(name)=>
     .then((data)=>setData(data))
     } ,[])
 
+
+    useEffect(()=>{
+      fetch("http://localhost:8888/MyCart")
+      .then ((res)=> res.json())
+      .then((data)=>{setCartData(data)
+      })
+      } ,[])
+
   const authInformation ={
     data,
     googleLogin,
@@ -84,7 +92,8 @@ const update=(name)=>
     user,
     logout,
     loading,
-    update
+    update,
+    CartData
   }
  
     
