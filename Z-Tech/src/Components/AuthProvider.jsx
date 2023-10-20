@@ -13,6 +13,8 @@ const googleProvider= new GoogleAuthProvider();
 
 export default function AuthProvider({children}) {
 
+
+  const [theme, setTheme] =useState("light")
   const [user, setUser] = useState({})
   const [loading, setLoading] = useState(true)
   const [data, setData] = useState([])
@@ -95,7 +97,9 @@ const update=(name)=>
     loading,
     update,
     CartData,
-    setCartData
+    setCartData,
+    setTheme,
+    theme
   }
  
     

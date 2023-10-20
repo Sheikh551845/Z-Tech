@@ -1,15 +1,21 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom';
+import { AuthContext } from './AuthProvider';
 
 export default function Brands() {
   
-    
+    const{theme}=useContext(AuthContext);
       
     
       return (
         <div className="mt-5 mb-10">
            <div className="w-fit mx-auto mb-5">
-          <h1 className="text-2xl lg:text-5xl text-indigo-700 font-bold my-10 ml-10">We work with</h1>
+           {
+        theme ==="light"? <h1 className="text-2xl lg:text-5xl text-indigo-700 font-bold my-10 ml-10">We work with</h1>
+        :
+        <h1 className="text-2xl lg:text-5xl text-white font-bold my-10 ml-10">We work with</h1>
+      }
+         
           </div>
           <div className="carousel carousel-center max-w-screen p-4 space-x-4 bg-neutral rounded-box ">
          
