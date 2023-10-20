@@ -65,13 +65,19 @@ export default function ProductDetails() {
      ,[CartData])
 
   
-
-  
+    //   console.log(exist.length)
+    //  if(!exist || exist.length==0)
+    //  {
+    //    console.log("helloo");
+    //  }
+    //  else{
+    //     console.log("helloo hoilo na");
+    //  }
 
      const CartSubmit=()=>
      {
-        toast.error("Already added this product in cart"); 
-        if(!exist){
+        
+        if(!exist || exist.length==0){
 
             fetch('http://localhost:8888/MyCart', {
                 method: 'POST',
@@ -84,10 +90,12 @@ export default function ProductDetails() {
                 .then(data => {
                     if(data.insertedId){
                       toast.success("Product added to Cart")
-                     
-          
+                      
                     }
                 })
+        }
+        else{
+            toast.error("Already added this product in cart"); 
         }
      
      

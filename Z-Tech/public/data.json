@@ -1,0 +1,31 @@
+[
+    {
+      "brandName": "Apple",
+      "imageUrl": "https://i.ibb.co/GcBK6sC/apple.jpg"
+    },
+    {
+      "brandName": "Samsung",
+      "imageUrl": "https://i.ibb.co/GcBK6sC/samsung.jpg"
+    },
+    {
+      "brandName": "Asus",
+      "imageUrl": "https://i.ibb.co/GcBK6sC/asus.jpg"
+    },
+    {
+      "brandName": "Sony",
+      "imageUrl": "https://i.ibb.co/GcBK6sC/sony.jpg"
+    },
+    {
+      "brandName": "HP",
+      "imageUrl": "https://i.ibb.co/GcBK6sC/hp.jpg"
+    },
+    {
+      "brandName": "Dell",
+      "imageUrl": "https://i.ibb.co/GcBK6sC/dell.jpg"
+    },
+    {
+      "brandName": "Realme",
+      "imageUrl": "https://i.ibb.co/GcBK6sC/realme.jpg"
+    }
+  ]
+  

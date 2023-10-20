@@ -17,6 +17,7 @@ export default function AuthProvider({children}) {
   const [loading, setLoading] = useState(true)
   const [data, setData] = useState([])
   const [CartData, setCartData] = useState([])
+ 
 
 
   //Google
@@ -93,7 +94,8 @@ const update=(name)=>
     logout,
     loading,
     update,
-    CartData
+    CartData,
+    setCartData
   }
  
     
