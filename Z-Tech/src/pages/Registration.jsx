@@ -66,7 +66,7 @@ export default function Registration() {
   return (
     <div className=" mx-auto my-10 ">
       <div className="relative flex w-72  md:w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mx-auto mt-32">
-  <div className="relative mx-2  md:mx-4 -mt-6 mb-4 grid h-20 md:h-28 place-items-center overflow-hidden rounded-xl bg-gradient-to-r from-zinc-400 to-zinc-600  bg-clip-border text-white shadow-lg shadow-zinc-600">
+  <div className="relative mx-2  md:mx-4 -mt-6 mb-4 grid h-20 md:h-28 place-items-center overflow-hidden rounded-xl bg-gradient-to-r from-indigo-400 to-indigo-600  bg-clip-border text-white shadow-lg shadow-indigo-600">
     <h3 className="block font-sans text-xl md:text-3xl font-semibold leading-snug tracking-normal text-white antialiased">
       Registration
     </h3>
@@ -93,7 +93,7 @@ export default function Registration() {
                                 <input type="text" placeholder="password" className="input input-bordered" name='password' required />
                             </div>
                             <div className="form-control mt-6 p-0">
-                                <button className="btn  bg-gradient-to-r from-zinc-400 to-zinc-600 text-white" type='submit'>Register</button>
+                                <button className="btn  bg-gradient-to-r from-indigo-400 to-indigo-600 text-white" type='submit'>Register</button>
                             </div>
                            
                         </form>

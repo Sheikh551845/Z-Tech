@@ -11,8 +11,8 @@ export default function ProductCart(product) {
 
 
   return (
-    <div className="max-w-fit mx-auto ">
-    <div className="relative flex w-[25rem] h-[42rem] p-2 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+    <div className=" mx-auto ">
+    <div className="relative flex w-[24rem] h-[42rem] p-2 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
     <div className="  relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
     <img
     src={imageUrl}

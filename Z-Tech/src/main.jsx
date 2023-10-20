@@ -29,6 +29,7 @@ import Sumsung from './pages/Sumsung';
 import Apple from './pages/Apple';
 import Asus from './pages/Asus';
 import UpdateProduct from './pages/UpdateProduct';
+import PrivateRoute from './Components/PrivateRoute';
 
 
 
@@ -45,11 +46,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/AddProducts",
-    element:<AddProducts></AddProducts>
+    element:<PrivateRoute><AddProducts></AddProducts></PrivateRoute>
 }, 
 {
   path: "/MyCart",
-  element:<MyCart></MyCart>
+  element:<PrivateRoute><MyCart></MyCart></PrivateRoute>
 },
 {
   path: "/Registration",
@@ -69,7 +70,7 @@ const router = createBrowserRouter([
 },
 {
   path: "/ProductDetails/:_id",
-  element:<ProductDetails></ProductDetails>, 
+  element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>, 
   loader: ({params})=>fetch("http://localhost:8888/AllProducts")
       
 },
@@ -99,7 +100,7 @@ const router = createBrowserRouter([
 },
 {
   path: "/UpdateProduct/:id",
-  element:<UpdateProduct></UpdateProduct>,
+  element:<PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
   loader: ({params})=>fetch(`http://localhost:8888/AllProducts/${params.id}`)
 },
 
