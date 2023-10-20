@@ -6,7 +6,7 @@ export default function UpdateProduct() {
 
 
     const {brandName,productName,productType,price,imageUrl,rating,description,_id}=useLoaderData();
-    console.log(brandName,productName,productType,price,imageUrl,rating,description,_id)
+    
 
     const [formData, setFormData] = useState({
     
