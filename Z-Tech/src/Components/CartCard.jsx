@@ -24,7 +24,7 @@ export default function CartCard(product) {
             if (result.isConfirmed) {
               console.log(_id);
 
-                fetch(`http://localhost:8888/MyCart/${_id}`, {
+                fetch(`https://zt-ech-backend-i7c5jj7n8-sheikh-mohammads-projects.vercel.app/MyCart/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res =>res.json()

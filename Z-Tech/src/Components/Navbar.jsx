@@ -219,10 +219,13 @@ export default function Navbar() {
     
     </div> :
 
-<div>
+<div className="flex justify-center items-center gap-4">
   <NavLink to="/Login">
   <button className="md:btn text-black p-1 md:w-22 md:h-6    md:p-3 bg-white rounded-lg text-xs lg:text-base">Log In</button>
 </NavLink>
+
+
+      <button onClick={()=>setTheme("dark")}><img className=" w-5 h-5 md:w-8 md:h-8 rounded-full"  src="https://i.ibb.co/KsDQxZ1/moon.png" alt="" /></button>
 </div>
 }
 

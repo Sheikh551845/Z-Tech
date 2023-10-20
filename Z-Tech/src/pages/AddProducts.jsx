@@ -24,7 +24,7 @@ export default function AddProducts() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch('http://localhost:8888/AllProducts', {
+    fetch('https://zt-ech-backend-i7c5jj7n8-sheikh-mohammads-projects.vercel.app/AllProducts', {
       method: 'POST',
       headers: {
           'content-type': 'application/json'

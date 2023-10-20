@@ -30,7 +30,7 @@ export default function UpdateProduct() {
       const handleSubmit = (e) => {
         e.preventDefault();
     
-        fetch(`http://localhost:8888/AllProducts/${_id}`, {
+        fetch(`https://zt-ech-backend-i7c5jj7n8-sheikh-mohammads-projects.vercel.app/AllProducts/${_id}`, {
           method: 'PUT',
           headers: {
               'content-type': 'application/json'

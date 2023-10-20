@@ -1,9 +1,9 @@
 # Z-Tech
 
 
-## [ Client Side Private repo](https://classroom.github.com/a/AhpcvLRc)
+## [ Z Tech Live link](https://z-tech-125f3.web.app/)
 
-## [ Server Side Private repo](https://classroom.github.com/a/tyhd_MNK)
+
 
 
 # Z-Tech website Features

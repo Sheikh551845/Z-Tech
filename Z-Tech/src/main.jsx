@@ -71,7 +71,7 @@ const router = createBrowserRouter([
 {
   path: "/ProductDetails/:_id",
   element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>, 
-  loader: ({params})=>fetch("http://localhost:8888/AllProducts")
+  loader: ({params})=>fetch("https://zt-ech-backend-i7c5jj7n8-sheikh-mohammads-projects.vercel.app/AllProducts")
       
 },
 {
@@ -101,7 +101,7 @@ const router = createBrowserRouter([
 {
   path: "/UpdateProduct/:id",
   element:<PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-  loader: ({params})=>fetch(`http://localhost:8888/AllProducts/${params.id}`)
+  loader: ({params})=>fetch(`https://zt-ech-backend-i7c5jj7n8-sheikh-mohammads-projects.vercel.app/AllProducts/${params.id}`)
 },
 
 

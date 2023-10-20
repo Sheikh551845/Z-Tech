@@ -13,7 +13,7 @@ export default function ProductDetails() {
     const [exist, setExist]=useState([])
 
     useEffect(()=>{
-        fetch("http://localhost:8888/MyCart")
+        fetch("https://zt-ech-backend-i7c5jj7n8-sheikh-mohammads-projects.vercel.app/MyCart")
         .then ((res)=> res.json())
         .then((data)=>{setCartData(data);
             console.log(data)
@@ -79,7 +79,7 @@ export default function ProductDetails() {
         
         if(!exist || exist.length==0){
 
-            fetch('http://localhost:8888/MyCart', {
+            fetch('https://zt-ech-backend-i7c5jj7n8-sheikh-mohammads-projects.vercel.app/MyCart', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
