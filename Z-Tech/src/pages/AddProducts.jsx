@@ -54,6 +54,7 @@ export default function AddProducts() {
 
   return (
     <div className="w-full my-14">
+      <p className="lg:text-4xl text-3xl font-extrabold leading-9 text-indigo-700 w-fit mx-auto my-5">Add Product</p> 
       <div className="bg-white rounded shadow-xl mt-7 py-7 px-10 w-fit mx-auto ">
     <form onSubmit={handleSubmit} className="w-full flex flex-col gap-3">
       <div className="form-control flex lg:gap-12 flex-col lg:flex-row flex-wrap lg:items-center lg:justify-center mx-auto">
@@ -202,7 +203,7 @@ export default function AddProducts() {
       <div className="form-control mt-6 p-0">
         <hr className="h-[1px] bg-indigo-800 my-14" />
         <div className="flex flex-col flex-wrap items-center justify-center w-full px-7 lg:flex-row gap-x-4 gap-y-4">
-          <button className="bg-indigo-700 rounded hover:bg-indigo-600 transform duration-300 ease-in-out text-sm font-medium px-6 py-4 text-white lg:max-w-[144px] w-full ">
+          <button className="bg-indigo-700 rounded hover:bg-indigo-600 transform duration-300 ease-in-out text-sm font-medium px-6 py-4 text-white lg:max-w-[144px] w-full " onClick={handleSubmit}>
             Add product
           </button>
         </div>

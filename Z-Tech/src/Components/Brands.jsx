@@ -31,7 +31,7 @@ export default function Brands() {
            type="button"
            data-ripple-light="true"
          >
-           Show Products
+           Show Apple Products
          </button>
          </Link>
        
@@ -59,7 +59,7 @@ export default function Brands() {
            type="button"
            data-ripple-light="true"
          >
-           Show Products
+           Show Sumsung Products
          </button>
          </Link>
        
@@ -87,7 +87,7 @@ export default function Brands() {
            type="button"
            data-ripple-light="true"
          >
-           Show Products
+           Show Sony Products
          </button>
          </Link>
        
@@ -115,7 +115,7 @@ export default function Brands() {
            type="button"
            data-ripple-light="true"
          >
-           Show Products
+           Show Asus Products
          </button>
          </Link>
        
@@ -144,7 +144,7 @@ export default function Brands() {
            type="button"
            data-ripple-light="true"
          >
-           Show Products
+           Show Oneplush Products
          </button>
          </Link>
        
@@ -172,7 +172,7 @@ export default function Brands() {
            type="button"
            data-ripple-light="true"
          >
-           Show Products
+           Show Realme Products
          </button>
          </Link>
        

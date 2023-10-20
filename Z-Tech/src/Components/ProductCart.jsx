@@ -12,12 +12,12 @@ export default function ProductCart(product) {
 
   return (
     <div className="max-w-fit mx-auto ">
-    <div className="relative flex w-[25rem] h-fit p-2 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-    <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
+    <div className="relative flex w-[25rem] h-[42rem] p-2 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+    <div className="  relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
     <img
     src={imageUrl}
     alt=""
-    className='h-52 w-full'
+    className='h-48 w-full'
     />
     </div>
     <div className="p-6">
@@ -53,14 +53,15 @@ export default function ProductCart(product) {
   </button>
   </Link>
     
+  <Link to={`/UpdateProduct/${_id}`}> 
   <button
-    className="select-none rounded-lg bg-black py- px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-indigo-400 transition-all hover:shadow-lg hover:shadow-indigo-700 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+    className="select-none rounded-lg bg-black py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-indigo-400 transition-all hover:shadow-lg hover:shadow-indigo-700 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
     type="button"
     data-ripple-light="true"
-    // onClick={()=>handleDelete(_id)}
   >
-   Update
+    Update
   </button>
+  </Link>
   
    
     </div>

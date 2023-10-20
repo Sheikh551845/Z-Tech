@@ -7,7 +7,7 @@ export default function FeatureCard(product) {
     const {productName,price, imageUrl,_id}=product.product;
   return (
     <div className="mx-auto">
-    <div className="relative flex w-[18rem] h-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+    <div className="relative flex w-[18rem] h-[28rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
     <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
     <img
     src={imageUrl}
@@ -19,8 +19,11 @@ export default function FeatureCard(product) {
     <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
     {productName}
     </h4>
-    <p className="mt-3 block font-sans text-xl font-normal leading-relaxed text-gray-700 antialiased">
-    {price}
+    <p className="mt-3 block font-sans text-xl font-semibold leading-relaxed text-gray-700 antialiased">
+    Price : <span className="font-normal">{price}</span>
+    </p>
+    <p className="mt-3 block font-sans text-xl font-semibold leading-relaxed text-gray-700 antialiased">
+    Discount : <span className="font-normal">20% off</span>
     </p>
     </div>
     <div className="p-6 pt-0">

@@ -28,6 +28,7 @@ import Oneplush from './pages/Oneplush';
 import Sumsung from './pages/Sumsung';
 import Apple from './pages/Apple';
 import Asus from './pages/Asus';
+import UpdateProduct from './pages/UpdateProduct';
 
 
 
@@ -95,6 +96,11 @@ const router = createBrowserRouter([
 {
   path: "/Asus",
   element:<Asus></Asus>
+},
+{
+  path: "/UpdateProduct/:id",
+  element:<UpdateProduct></UpdateProduct>,
+  loader: ({params})=>fetch(`http://localhost:8888/AllProducts/${params.id}`)
 },
 
 
