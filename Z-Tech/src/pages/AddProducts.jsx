@@ -203,7 +203,7 @@ export default function AddProducts() {
         <hr className="h-[1px] bg-indigo-800 my-14" />
         <div className="flex flex-col flex-wrap items-center justify-center w-full px-7 lg:flex-row gap-x-4 gap-y-4">
           <button className="bg-indigo-700 rounded hover:bg-indigo-600 transform duration-300 ease-in-out text-sm font-medium px-6 py-4 text-white lg:max-w-[144px] w-full ">
-            Submit
+            Add product
           </button>
         </div>
       </div>

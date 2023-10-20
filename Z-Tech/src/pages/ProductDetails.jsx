@@ -47,7 +47,7 @@ export default function ProductDetails() {
     ,[_id,data])
    
 
-    const {productName, imageUrl,description,brandName}=card;
+    const {productName, imageUrl,description,brandName,productType,price,rating}=card;
 
 
 
@@ -84,7 +84,7 @@ export default function ProductDetails() {
                 headers: {
                     'content-type': 'application/json'
                 },
-                body: JSON.stringify(card)
+                body: JSON.stringify({productName, imageUrl,description,brandName,productType,price,rating})
             })
                 .then(res => res.json())
                 .then(data => {
