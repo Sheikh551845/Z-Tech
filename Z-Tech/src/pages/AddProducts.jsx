@@ -61,7 +61,24 @@ export default function AddProducts() {
           <label className="label">
             <span className="label-text text-bold text-indigo-600">Brand Name</span>
           </label>
-          <input
+          <select
+  className="input border-indigo-600 w-80 md:w-96"
+  name="brandName"
+  value={formData.brandName}
+  onChange={handleChange}
+  required
+>
+  <option value="">Select Brand</option>
+  <option value="Apple">Apple</option>
+  <option value="Samsung">Samsung</option>
+  <option value="Realme">Realme</option>
+  <option value="Sony">Sony</option>
+  <option value="Asus">Asus</option>
+  <option value="OnePlus">OnePlus</option>
+</select>
+
+          
+          {/* <input
             type="text"
             placeholder="Brand name"
             className="input border-indigo-600 w-80 md:w-96"
@@ -69,7 +86,7 @@ export default function AddProducts() {
             value={formData.brandName}
             onChange={handleChange}
             required
-          />
+          /> */}
         </div>
         <div>
           <label className="label">
@@ -92,7 +109,23 @@ export default function AddProducts() {
           <label className="label">
             <span className="label-text text-bold text-indigo-600">Product type</span>
           </label>
-          <input
+          <select
+  className="input border-indigo-600 w-80 md:w-96"
+  name="productType"
+  value={formData.productType}
+  onChange={handleChange}
+  required
+>
+  <option value="">Select Product Type</option>
+  <option value="Smartphone">Smartphone</option>
+  <option value="Laptop">Laptop</option>
+  <option value="Headphone">Headphone</option>
+  <option value="Wireless Earbuds">Wireless Earbuds</option>
+  <option value="Tv">Tv</option>
+  <option value="Smartwatch">Smartwatch</option>
+</select>
+
+          {/* <input
             type="text"
             placeholder="Product type"
             className="input border-indigo-600 w-80 md:w-96"
@@ -100,7 +133,7 @@ export default function AddProducts() {
             value={formData.productType}
             onChange={handleChange}
             required
-          />
+          /> */}
         </div>
         <div>
           <label className="label">

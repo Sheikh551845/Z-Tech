@@ -11,7 +11,7 @@ export default function Brands() {
            <div className="w-fit mx-auto mb-5">
           <h1 className="text-2xl lg:text-5xl text-indigo-700 font-bold my-10 ml-10">We work with</h1>
           </div>
-          <div className="carousel carousel-center w-screen p-4 space-x-4 bg-neutral rounded-box ">
+          <div className="carousel carousel-center max-w-screen p-4 space-x-4 bg-neutral rounded-box ">
          
          <div className="carousel-item">
          <div className="overflow-y-hidden h-[600px] md:h-[800px]">
@@ -25,7 +25,7 @@ export default function Brands() {
                  <div className="mt-10  lg:w-auto custom sm:mt-96 md:mt-0 h-full flex px-4 md:px-0  z-10 justify-center items-center md:items-start flex-col md:pl-20 lg:px-20 2xl:px-44">
                    <p className="text-xl sm:text-2xl xl:text-4xl text-center md:text-left font-semibold leading-6 xl:leading-10 text-gray-100 md:w-96 ">Apple</p>
                    
-                  <Link to={`/ProductDetails`}> 
+                  <Link to={`/Apple`}> 
          <button
            className=" mt-5 select-none rounded-lg bg-black py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-indigo-400 transition-all hover:shadow-lg hover:shadow-indigo-700 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
            type="button"
@@ -53,7 +53,7 @@ export default function Brands() {
                    <p className="text-xl sm:text-2xl xl:text-4xl text-center md:text-left font-semibold leading-6 xl:leading-10 text-gray-100 md:w-96 ">Sumsung</p>
                    
        
-                  <Link to={`/ProductDetails`}> 
+                  <Link to={`/Sumsung`}> 
          <button
            className=" mt-5 select-none rounded-lg bg-black py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-indigo-400 transition-all hover:shadow-lg hover:shadow-indigo-700 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
            type="button"
@@ -81,7 +81,7 @@ export default function Brands() {
                    <p className="text-xl sm:text-2xl xl:text-4xl text-center md:text-left font-semibold leading-6 xl:leading-10 text-gray-100 md:w-96 ">Sony</p>
                    
        
-                  <Link to={`/ProductDetails`}> 
+                  <Link to={`/Sony`}> 
          <button
            className=" mt-5 select-none rounded-lg bg-black py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-indigo-400 transition-all hover:shadow-lg hover:shadow-indigo-700 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
            type="button"
@@ -109,7 +109,7 @@ export default function Brands() {
                    <p className="text-xl sm:text-2xl xl:text-4xl text-center md:text-left font-semibold leading-6 xl:leading-10 text-gray-100 md:w-96 ">Asus</p>
                    
        
-                  <Link to={`/ProductDetails`}> 
+                  <Link to={`/Asus`}> 
          <button
            className=" mt-5 select-none rounded-lg bg-black py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-indigo-400 transition-all hover:shadow-lg hover:shadow-indigo-700 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
            type="button"
@@ -124,34 +124,7 @@ export default function Brands() {
              </div>
            </div>
          </div> 
-         <div className="carousel-item">
-         <div className="overflow-y-hidden  h-[600px] md:h-[800px]">
-             <div className="relative flex justify-center items-center md:justify-start ">
-               <img className=" h-[600px] w-[50vh] md:h-[800px]  md:w-[70vw] hidden lg:block" src="https://i.ibb.co/9pFbNKB/new-smartphone-balancing-with-podium.jpg" alt="randeer" />
-               <img className=" h-[600px] w-[50vh] md:h-[800px]  md:w-[70vw] md:block lg:hidden hidden " src="https://i.ibb.co/9pFbNKB/new-smartphone-balancing-with-podium.jpg" alt="randeer" />
-               <img className=" h-[600px] w-[50vh] md:h-[800px]  md:w-[70vw] md:hidden" src="https://i.ibb.co/9pFbNKB/new-smartphone-balancing-with-podium.jpg" alt="randeer" />
-               
-               <div className="flex absolute justify-start flex-col md:flex-row items-center">
-                 <div className=" py-32 sm:py-20  md:hidden" />
-                 <div className="mt-10  lg:w-auto custom sm:mt-96 md:mt-0 h-full flex px-4 md:px-0  z-10 justify-center items-center md:items-start flex-col md:pl-20 lg:px-20 2xl:px-44">
-                   <p className="text-xl sm:text-2xl xl:text-4xl text-center md:text-left font-semibold leading-6 xl:leading-10 text-gray-100 md:w-96 ">Smart Phones</p>
-                   
-       
-                  <Link to={`/ProductDetails`}> 
-         <button
-           className=" mt-5 select-none rounded-lg bg-black py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-indigo-400 transition-all hover:shadow-lg hover:shadow-indigo-700 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-           type="button"
-           data-ripple-light="true"
-         >
-           Show Products
-         </button>
-         </Link>
-       
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div> 
+        
          <div className="carousel-item">
          <div className="overflow-y-hidden  h-[600px] md:h-[800px]">
              <div className="relative flex justify-center items-center md:justify-start ">
@@ -165,7 +138,7 @@ export default function Brands() {
                    <p className="text-xl sm:text-2xl xl:text-4xl text-center md:text-left font-semibold leading-6 xl:leading-10 text-gray-100 md:w-96 ">One Plush</p>
                    
        
-                  <Link to={`/ProductDetails`}> 
+                  <Link to={`/Oneplush`}> 
          <button
            className=" mt-5 select-none rounded-lg bg-black py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-indigo-400 transition-all hover:shadow-lg hover:shadow-indigo-700 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
            type="button"
@@ -193,7 +166,7 @@ export default function Brands() {
                    <p className="text-xl sm:text-2xl xl:text-4xl text-center md:text-left font-semibold leading-6 xl:leading-10 text-gray-100 md:w-96 ">Realme</p>
                    
        
-                  <Link to={`/ProductDetails`}> 
+                  <Link to={`/Realme`}> 
          <button
            className=" mt-5 select-none rounded-lg bg-black py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-indigo-400 transition-all hover:shadow-lg hover:shadow-indigo-700 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
            type="button"

@@ -22,6 +22,12 @@ import Login from './pages/Login';
 import Registration from './pages/Registration';
 import AllProducts from './pages/AllProducts';
 import ProductDetails from './pages/ProductDetails';
+import Realme from './pages/Realme';
+import Sony from './pages/Sony';
+import Oneplush from './pages/Oneplush';
+import Sumsung from './pages/Sumsung';
+import Apple from './pages/Apple';
+import Asus from './pages/Asus';
 
 
 
@@ -66,6 +72,31 @@ const router = createBrowserRouter([
   loader: ({params})=>fetch("http://localhost:8888/AllProducts")
       
 },
+{
+  path: "/Apple",
+  element:<Apple></Apple>
+},
+{
+  path: "/Sumsung",
+  element:<Sumsung></Sumsung>
+},
+{
+  path: "/Oneplush",
+  element:<Oneplush></Oneplush>
+},
+{
+  path: "/Sony",
+  element:<Sony></Sony>
+},
+{
+  path: "/Realme",
+  element:<Realme></Realme>
+},
+{
+  path: "/Asus",
+  element:<Asus></Asus>
+},
+
 
  ],
 },
